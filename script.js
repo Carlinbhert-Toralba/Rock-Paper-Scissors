@@ -1,8 +1,10 @@
 "use strict";
 
+// variables to keep track of scores
 let playerScore = 0;
 let computerScore = 0;
 
+// function for the computer picking a random choice
 function getComputerChoice() {
   const choice = ["rock", "paper", "scissors"];
   const pick = choice[Math.floor(Math.random() * choice.length)];
@@ -10,6 +12,7 @@ function getComputerChoice() {
   return pick;
 }
 
+// function for getting player input and conditionals for score tabulations
 function playRound() {
   const playerSelection = prompt(
     "Choose rock, paper or scissors"
@@ -32,6 +35,7 @@ function playRound() {
   }
 }
 
+// function with a for loop playing 5 rounds and picking a winner in the end
 function game() {
   for (let i = 1; i <= 5; i++) {
     playRound();
