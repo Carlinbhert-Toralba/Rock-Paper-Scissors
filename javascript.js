@@ -1,6 +1,3 @@
-let playerScore = 0
-let computerScore = 0
-
 // function randomly returns "Rock", "Paper" or "Scissors"
 // create function
 // create array of 3 choices named 'choice'
@@ -21,10 +18,10 @@ let computerScore = 0
 // have the round played
 // create game score conditional
 
+let playerScore = 0;
+let computerScore = 0;
 
-
-
-
-
-
-
+function getComputerChoice() {
+  const choice = ["rock", "paper", "scissors"];
+  const pick = choice[Math.floor(Math.random() * choice.length)];
+}
