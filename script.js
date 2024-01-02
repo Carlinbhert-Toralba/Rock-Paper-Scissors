@@ -41,11 +41,11 @@ function game() {
     playRound();
   }
   if (computerScore > playerScore) {
-    console.log("Computer wins!");
+    console.log("Computer wins the game!");
   } else if (computerScore < playerScore) {
-    console.log("Player wins!");
+    console.log("Player wins the game!");
   } else {
-    console.log("It's a tie!");
+    console.log("It's a tie, no one wins!");
   }
 }
 
