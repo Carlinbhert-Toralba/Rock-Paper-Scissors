@@ -23,9 +23,9 @@ function playRound() {
   if (playerSelection === computerSelection) {
     playRound();
   } else if (
-    (playerSelection === "rock" && computerSelection === "paper") ||
+    (playerSelection === "rock" && computerSelection === "scissors") ||
     (playerSelection === "paper" && computerSelection === "rock") ||
-    (playerSelection === "scissor" && computerSelection === "paper")
+    (playerSelection === "scissors" && computerSelection === "paper")
   ) {
     console.log("Player wins this round");
     playerScore++;
